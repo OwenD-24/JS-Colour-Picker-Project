@@ -3,7 +3,7 @@ name: User Story Template
 about: A template for basic user stories
 title: 'USER STORY: Colour Code Generator'
 labels: ''
-assignees: ''
+assignees: OwenD-24
 
 ---
 
