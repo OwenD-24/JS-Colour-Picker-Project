@@ -14,30 +14,30 @@ let debounceTimeout;
 document.addEventListener('keydown', e => {
     if (e.key === ' ') {
         e.preventDefault();
-        createPalette();
         clearTimeout(debounceTimeout);
         debounceTimeout = setTimeout(() => createPalette(), 200);
     }
 });
 
-// New Palette Button 
-btnE1.addEventListener('click', () => {
+// New Palette Button
+btnEl.addEventListener('click', () => {
     createPalette();
-})
+});
 
 // Copying a colour to the Clipboard
 async function copyClipboard(color) {
     if (navigator.clipboard) {
-    await navigator.clipboard.writeText(color);
-    alert(`color ${color} is copied to clipboard!`);
+        await navigator.clipboard.writeText(color);
     } else {
-        alert(`Your browser does not support clipboard copying. Please copy the color manually: ${color}`)
+        alert(`Your browser does not support clipboard copying. Please copy the color manually: ${color}`);
     }
 
-    const notificationE1 = document.createElement('div');
-    notificationEl.className = 'fixed top-4 z-20 bg-slate-800 rounded-full py-4 px-20 text-white';
+    const notificationEl = document.createElement('div');
+    notificationEl.className = 'fixed z-20 bg-slate-800 rounded-full py-2 px-4 text-white';
+    notificationEl.style.top = '1rem';
+    notificationEl.style.right = '1rem';
     notificationEl.innerHTML = `Color <b>${color}</b> is copied to the clipboard!`;
-    
+
     document.body.appendChild(notificationEl);
 
     setTimeout(() => {
@@ -45,8 +45,8 @@ async function copyClipboard(color) {
     }, 3000);
 }
 
-// Appling new Palette
-function createPalette() { 
+// Applying new Palette
+function createPalette() {
     colorCards.forEach(card => {
         const newColor = generateColor();
 
@@ -56,13 +56,13 @@ function createPalette() {
 }
 
 // Generating a Random Colour
-function generateColor() { 
+function generateColor() {
     const hexArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
         'a', 'b', 'c', 'd', 'e', 'f']; 
 
     let color = '#';
 
-    for (let i = 0; i < 6; i++) { 
+    for (let i = 0; i < 6; i++) {
         color += hexArray[Math.floor(Math.random() * hexArray.length)];
     }
 
