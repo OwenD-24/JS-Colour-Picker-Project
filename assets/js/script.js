@@ -10,10 +10,13 @@ colorCards.forEach(card => {
 });
 
 // Listener for Spacebar press down to Generate new Palette
+let debounceTimeout;
 document.addEventListener('keydown', e => {
-    if (e.key === '') {
+    if (e.key === ' ') {
         e.preventDefault();
         createPalette();
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => createPalette(), 200);
     }
 });
 
@@ -24,11 +27,15 @@ btnE1.addEventListener('click', () => {
 
 // Copying a colour to the Clipboard
 async function copyClipboard(color) {
+    if (navigator.clipboard) {
     await navigator.clipboard.writeText(color);
+    alert(`color ${color} is copied to clipboard!`);
+    } else {
+        alert(`Your browser does not support clipboard copying. Please copy the color manually: ${color}`)
+    }
 
     const notificationE1 = document.createElement('div');
     notificationEl.className = 'fixed top-4 z-20 bg-slate-800 rounded-full py-4 px-20 text-white';
-
     notificationEl.innerHTML = `Color <b>${color}</b> is copied to the clipboard!`;
     
     document.body.appendChild(notificationEl);
