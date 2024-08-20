@@ -5,7 +5,7 @@ const btnEl = document.getElementById('btn');
 // Code for Click Event Listeners to Copy Colours
 colorCards.forEach(card => {
     card.addEventListener('click', () => {
-        copyClipboard(card.querySelector('p').innerHTML);
+        copyClipboard(card.querySelector('p').innerText);
     });
 });
 
