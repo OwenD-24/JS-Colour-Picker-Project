@@ -11,8 +11,8 @@ colorCards.forEach(card => {
 
 // Listener for Spacebar press down to Generate new Palette
 document.addEventListener('keydown', e => {
-    if (e.key === 'Space') {
-        e.defaultPrevented();
+    if (e.key === '') {
+        e.preventDefault();
         createPalette();
     }
 });
