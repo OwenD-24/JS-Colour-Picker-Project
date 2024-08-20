@@ -50,8 +50,14 @@ function createPalette() {
     colorCards.forEach(card => {
         const newColor = generateColor();
 
+        // Update the background color of the card
         card.querySelector('div').style.background = newColor;
+        
+        // Update the text to display the new color code
         card.querySelector('p').innerText = newColor;
+
+        // Apply the box shadow with the new color
+        card.style.boxShadow = `0 4px 15px ${newColor}`;
     });
 }
 
