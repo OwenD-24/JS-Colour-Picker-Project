@@ -19,5 +19,5 @@ document.addEventListener('keydown', e => {
 
 // New Palette Button 
 btnE1.addEventListener('click', () => {
-    createPallet();
+    createpalette();
 })
