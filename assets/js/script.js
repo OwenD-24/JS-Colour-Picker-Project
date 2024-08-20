@@ -21,3 +21,19 @@ document.addEventListener('keydown', e => {
 btnE1.addEventListener('click', () => {
     createPalette();
 })
+
+// Copying a colour to the Clipboard
+async function copyClipboard(color) {
+    await navigator.clipboard.writeText('span');
+
+    const notificationE1 = document.createElement('span');
+    notificationEl.className = 'top-4 z-20 bg-slate-800 rounded-full py-4 px-20 text-white';
+
+    notificationEl.innerHTML = `Color <b>${color}</b> is copied to the clipboard!`;
+    
+    document.body.appendChild(notificationEl);
+
+    setTimeout(() => {
+        notificationEl.removeChild();
+    }, 3000);
+}
