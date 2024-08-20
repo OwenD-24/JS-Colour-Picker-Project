@@ -39,11 +39,11 @@ async function copyClipboard(color) {
 }
 
 // Appling new Palette
-function createPallet() { 
+function createPalette() { 
     colorCards.forEach(card => {
-        const newColor = generatedColor();
+        const newColor = generateColor();
 
         card.querySelector('div').style.background = newColor;
-        card.querySelector('p').innerHTML = newColor;
+        card.querySelector('p').innerText = newColor;
     });
 }
