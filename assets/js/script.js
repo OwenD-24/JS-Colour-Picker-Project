@@ -24,16 +24,16 @@ btnE1.addEventListener('click', () => {
 
 // Copying a colour to the Clipboard
 async function copyClipboard(color) {
-    await navigator.clipboard.writeText('span');
+    await navigator.clipboard.writeText(color);
 
-    const notificationE1 = document.createElement('span');
-    notificationEl.className = 'top-4 z-20 bg-slate-800 rounded-full py-4 px-20 text-white';
+    const notificationE1 = document.createElement('div');
+    notificationEl.className = 'fixed top-4 z-20 bg-slate-800 rounded-full py-4 px-20 text-white';
 
     notificationEl.innerHTML = `Color <b>${color}</b> is copied to the clipboard!`;
     
     document.body.appendChild(notificationEl);
 
     setTimeout(() => {
-        notificationEl.removeChild();
+        notificationEl.remove();
     }, 3000);
 }
