@@ -8,3 +8,11 @@ colorCards.forEach(card => {
         copyClipboard(card.querySelector('p').innerHTML);
     });
 });
+
+// Listener for Spacebar press down to Generate new Palette
+document.addEventListener('keydown', e => {
+    if (e.key === 'Space') {
+        e.defaultPrevented();
+        createPalette();
+    }
+});
