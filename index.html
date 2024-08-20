@@ -9,13 +9,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/script.js" defer></script> <!-- defer makes sure the JS runs after HTML has loaded -->
     <title>Colour Palette Generator</title>
+    <link rel="icon" href="assets/js/images/favicon.png" type="image/x-icon">
 </head>
 
 <!-- Body Section -->
 
 <body class="bg-gray-300 flex flex-col items-center min-h-screen pt-15 pl-5 pr-5">
 
-    <h1 class="text-5xl font-bold my-7">Colour Palette Generator</h1> <!-- Heading -->
+    <!-- Logo and Heading -->
+    <div class="flex items-center mb-3">
+        <img src="assets/js/images/logo.png" alt="Logo" class="h-16 w-auto mr-4">
+        <h1 class="text-5xl font-bold my-5">Colour Palette Generator</h1>
+    </div>
 
     <!-- Grind container for cards -->
     <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 m-4 container">
@@ -119,6 +124,7 @@
         Generate Palette
     </button>
 
+    <!-- Added text to let the user know they can also press spacebar to generate colours -->
     <p class="text-black text-xl font-bold mt-1 mb-5">Or just press the "spacebar" to generate new
         palette!</p>
 </body>
