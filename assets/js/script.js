@@ -19,10 +19,23 @@ document.addEventListener('keydown', e => {
     }
 });
 
+// Listener for Backspace press down to Refresh Palette
+document.addEventListener('keydown', e => {
+    if (e.key  === 'Backspace') {
+        e.preventDefault();
+        window.location.href = 'index.html';
+    }
+})
+
 // New Palette Button
 btnEl.addEventListener('click', () => {
     createPalette();
 });
+
+// Refresh Palette Button
+refreshBtnE1.addEventListener('click', () => {
+    window.location.href = 'index.html';
+})
 
 // Copying a colour to the Clipboard
 async function copyClipboard(color) {
