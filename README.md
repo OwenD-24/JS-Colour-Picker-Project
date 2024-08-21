@@ -1,131 +1,166 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![image](https://github.com/user-attachments/assets/40dfdf28-cf3c-4f48-8af1-8a7a709f664b)
+## Colour Palette Generator
 
-Welcome Owen Davis,
+### Live Link Site 
+https://owend-24.github.io/JS-Colour-Picker-Project/index.html
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Brief Introduction
+The Colour Palette Generator is a web application that allows users to generate and view different colour palettes. 
+Users can click on colour cards to copy colour codes to their clipboard, generate new palettes using a button or keyboard shortcuts, and refresh the palette.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## Responsivity Example Image
+![image](https://github.com/user-attachments/assets/8ad8961b-e015-46c6-b979-127245341131)
 
-## Gitpod Reminders
+## Contents
+1. **UX (User Experience)**
+    - **User Stories**
+    - **Strategy**
+    - **Scope**
+    - **Structural**
+    - **Skeleton**
+    - **Wireframe**
+    - **Surface**
+2. **Design**
+    - **Typography**
+    - **Colour Scheme**
+    - **Imagery**
+3. **Website Features**
+4. **Tablet/Mobile View**
+5. **Future Features**
+6. **Technology Used**
+7. **Deployment**
+8. **Testing**
+9. **Credits**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## 1. UX (User Experience)
+### User Stories
+![image](https://github.com/user-attachments/assets/7ce9c24d-d3c9-423e-a73e-4cf002c8ae7e)
 
-`python3 -m http.server`
+### Strategy
+The goal of this project is to provide an easy-to-use tool for generating colour palettes. 
+The design is focused on simplicity and ease of use, with interactive features to enhance user experience.
 
-A blue button should appear to click: _Make Public_,
+### Scope
+The application will generate a set of colour cards, each displaying a different colour. 
+Users can interact with these cards to copy colours, and generate or refresh palettes using buttons or keyboard shortcuts.
 
-Another blue button should appear to click: _Open Browser_.
+### Structural
+- **Header**: Contains the logo and main heading.
+- **Main Content**: A grid of colour cards, Buttons for generating and refreshing palettes.
+- **Footer**: Social links and copyright
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### Skeleton
+The layout is designed using a grid system to ensure responsiveness. 
+The colour cards are arranged in a flexible grid that adapts to different screen sizes.
 
-A blue button should appear to click: _Make Public_,
+### Wireframe
+![image](https://github.com/user-attachments/assets/78484c5f-71e5-4ab0-9715-eb052447af54)
 
-Another blue button should appear to click: _Open Browser_.
+### Surface
+The design uses Tailwind CSS for styling, with a focus on clean and modern aesthetics. 
+The colour palette is bright and engaging, with interactive elements providing feedback to users.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## 2. Design
+### Typography
+- **Primary Font**: Tailwind CSS default font stack
+- **Font Sizes**: Various sizes used for headings, text, and buttons.
+  
+### Colour Scheme
+- **Background Colour**: Gray (#f7fafc)
+- **Primary Colour**: Sky Blue (#38bdf8)
+- **Accent Colours**: Various shades of red, orange, yellow, green, and blue.
+  
+### Imagery
+- **Logo**: `assets/js/images/logo.png`
+- **Favicon**: `assets/js/images/favicon.png`
+![4704539](https://github.com/user-attachments/assets/b08b23e6-7bea-47dd-a6e9-a3ac4d07363b)
 
-To log into the Heroku toolbelt CLI:
+## 3. Website Features
+- **Generate Palette**: Generates a new colour palette with random colours.
+- **Refresh Palette**: Refreshes the current palette to display a new set of colours.
+- **Copy Colour**: Allows users to copy the colour code to the clipboard.
+- **Keyboard Shortcuts**: Press Spacebar to generate a new palette and Backspace to refresh.
+  
+### JavaScript Logic/Functionality
+- **Event Listeners**: Handle click events on colour cards, button clicks, and keyboard shortcuts.
+- **Palette Generation**: Generates random colours and updates the colour cards.
+- **Clipboard Copying**: Uses the Clipboard API to copy colour codes to the clipboard.
+- **Notification**: Displays a notification when a colour is copied to the clipboard.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## 4. Tablet/Mobile View
+The website is designed to be responsive, using Tailwind CSS grid system to ensure proper display on tablets and mobile devices.
+The layout adjusts to fit different screen sizes, ensuring a consistent user experience across devices.
+![image](https://github.com/user-attachments/assets/35c8de10-ab2d-4c5c-acd1-ac070c24b611)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+## 5. Future Features
+- **Back Button**: Allow users to go back to the previous palette they were on.
+- **Custom Colour Palette Creation**: Allow users to create and save custom colour palettes.
+- **Colour Contrast Analysis**: Provide feedback on colour contrast for accessibility.
+- **Export Palette**: Enable users to export their generated palette as an image or text file.
 
-### Connecting your Mongo database
+## 6. Technology Used
+### Languages
+- **HTML**
+- **CSS**
+- **JavaScript**
+  
+### Frameworks
+- **Tailwind CSS**: For responsive design and styling.
+  
+### Libraries
+- **Clipboard API**: For clipboard interaction.
+- **Font Awesome Icons**: For Footer section social links.
+  
+### Programs
+- **GitHub**: For version control and deployment.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+## 7. Deployment
+- Deployed website having no issues, everything works as it should.
+![image](https://github.com/user-attachments/assets/84788245-9fb5-43dd-a7bd-92297af8d05c)
 
-------
+## 8. Testing
+### Colour Contrast
+- WCAG Contrast Checker Extension
+![image](https://github.com/user-attachments/assets/02d50191-23be-41b2-a0db-28bc0e4bae8e)
 
-## Release History
+### Validation
+- **HTML & CSS**: Validated using [W3C HTML Validator](https://validator.w3.org/)
+![image](https://github.com/user-attachments/assets/9390532f-e083-4542-a1d1-de732510e074)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- **JavaScript**: Tested for errors and functionality on console log.
+![image](https://github.com/user-attachments/assets/01cb86bd-8637-4148-8d11-ea45cd9a4cd2)
 
-**June 18, 2024,** Add Mongo back into template
+### Lighthouse Audits
+- **Performance**: Ensured good performance scores.
+- **Accessibility**: Checked for accessibility issues.
+- **Best Practices**: Verified adherence to best practices.
+![image](https://github.com/user-attachments/assets/216c0819-a990-49e8-ae1d-8cbf9498b712)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Bugs
+- Fixed tailwind error on console.log.
+- Fixed issues related to colour card responsiveness.
+- Addressed minor bugs in clipboard copying functionality.
+- Fixed issues with the clicking listeners.
+- Fixed issues causing palette cards to distort.
 
-**May 28 2024:** Fix Mongo and Links installs
+## 9.Credits
+### Content References
+- **Inspiration**: Examples of colour palette generators from various design resources and tutorials.
+  
+### Media References
+- **Images**: Logo and favicon sourced from Google Images..
+- **Font Awesome Icons**: Used for Footer section.
+  
+### Acknowledgments
+- **Tailwind CSS**: For providing a powerful utility-first CSS framework.
+- **W3Schools:** Developing new Listeners and Functions.
+- **A little bit perplexity and chat GPT**: Bug fixes and Validation
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
