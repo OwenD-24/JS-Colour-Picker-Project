@@ -25,7 +25,7 @@ document.addEventListener('keydown', e => {
         e.preventDefault();
         window.location.href = 'index.html';
     }
-})
+});
 
 // New Palette Button
 btnEl.addEventListener('click', () => {
@@ -35,7 +35,7 @@ btnEl.addEventListener('click', () => {
 // Refresh Palette Button
 refreshBtnE1.addEventListener('click', () => {
     window.location.href = 'index.html';
-})
+});
 
 // Copying a colour to the Clipboard
 async function copyClipboard(color) {
