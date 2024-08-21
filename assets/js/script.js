@@ -1,7 +1,6 @@
 // Code for Selecting Elements and Setting up Event Listeners
 const colorCards = document.querySelectorAll('.color-card');
 const btnEl = document.getElementById('btn');
-const refreshBtnEl = document.getElementById('btn-refresh');
 
 // Code for Click Event Listeners to Copy Colours
 colorCards.forEach(card => {
@@ -33,8 +32,11 @@ btnEl.addEventListener('click', () => {
     createPalette();
 });
 
+// Event Listener for Refresh Button
+const refreshBtnEl = document.getElementById('btn-refresh');
+
 // Refresh Palette Button
-refreshBtnE1.addEventListener('click', () => {
+refreshBtnEl.addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
