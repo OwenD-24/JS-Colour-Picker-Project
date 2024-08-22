@@ -6,10 +6,10 @@ https://owend-24.github.io/JS-Colour-Picker-Project/index.html
 
 ## Brief Introduction
 The Colour Palette Generator is a web application that allows users to generate and view different colour palettes. 
-Users can click on colour cards to copy colour codes to their clipboard, generate new palettes using a button or keyboard shortcuts, and refresh the palette.
+Users can click on colour cards to copy colour codes to their clipboard, generate new palettes using a button or keyboard shortcuts, and refresh the palette. 
 
 ## Responsivity Example Image
-![image](https://github.com/user-attachments/assets/8ad8961b-e015-46c6-b979-127245341131)
+![image](image.png)
 
 ## Contents
 1. **UX (User Experience)**
@@ -75,11 +75,11 @@ The colour palette is bright and engaging, with interactive elements providing f
 - **Favicon**: `assets/js/images/favicon.png`
 ![4704539](https://github.com/user-attachments/assets/b08b23e6-7bea-47dd-a6e9-a3ac4d07363b)
 
-## 3. Website Features
-- **Generate Palette**: Generates a new colour palette with random colours.
-- **Refresh Palette**: Refreshes the current palette to display a new set of colours.
-- **Copy Colour**: Allows users to copy the colour code to the clipboard.
-- **Keyboard Shortcuts**: Press Spacebar to generate a new palette and Backspace to refresh.
+## 3. ## Features
+- Generate random colour palettes
+- Copy colours directly to the clipboard with a click
+- Refresh the palette with a button or keyboard shortcut
+- Responsive design for both desktop and mobile views
   
 ### JavaScript Logic/Functionality
 - **Event Listeners**: Handle click events on colour cards, button clicks, and keyboard shortcuts.
@@ -104,12 +104,10 @@ The layout adjusts to fit different screen sizes, ensuring a consistent user exp
 - **CSS**
 - **JavaScript**
   
-### Frameworks
-- **Tailwind CSS**: For responsive design and styling.
-  
-### Libraries
-- **Clipboard API**: For clipboard interaction.
-- **Font Awesome Icons**: For Footer section social links.
+### Frameworks & Libraries
+- **Tailwind CSS**: Chosen for its utility-first approach, allowing for rapid UI development with a consistent and responsive design.
+- **Clipboard API**: Integrated to allow direct copying of colour codes to the user’s clipboard.
+- **Font Awesome**: Used for social media icons to maintain a professional and modern appearance.
   
 ### Programs
 - **GitHub**: For version control and deployment.
@@ -134,7 +132,7 @@ The layout adjusts to fit different screen sizes, ensuring a consistent user exp
 - **Performance**: Ensured good performance scores.
 - **Accessibility**: Checked for accessibility issues.
 - **Best Practices**: Verified adherence to best practices.
-![image](https://github.com/user-attachments/assets/216c0819-a990-49e8-ae1d-8cbf9498b712)
+![image](image-1.png)
 
 ### Bugs
 - Fixed tailwind error on console.log.
