@@ -1,164 +1,207 @@
 ![image](https://github.com/user-attachments/assets/40dfdf28-cf3c-4f48-8af1-8a7a709f664b)
-## Colour Palette Generator
 
-### Live Link Site 
+# Colour Palette Generator
+
+## Live Site
+
 https://owend-24.github.io/JS-Colour-Picker-Project/index.html
 
 ## Brief Introduction
-The Colour Palette Generator is a web application that allows users to generate and view different colour palettes. 
-Users can click on colour cards to copy colour codes to their clipboard, generate new palettes using a button or keyboard shortcuts, and refresh the palette. 
 
-## Responsivity Example Image
+The Colour Palette Generator is a responsive frontend web application that allows users to generate and view random colour palettes.
+
+Users can click on colour cards to copy HEX colour codes to their clipboard, generate new palettes using a button, refresh the palette, and use keyboard shortcuts for a faster workflow.
+
+## Responsivity Example
+
 ![image](image.png)
 
 ## Contents
-1. **UX (User Experience)**
-    - **User Stories**
-    - **Strategy**
-    - **Scope**
-    - **Structural**
-    - **Skeleton**
-    - **Wireframe**
-    - **Surface**
-2. **Design**
-    - **Typography**
-    - **Colour Scheme**
-    - **Imagery**
-3. **Website Features**
-4. **Tablet/Mobile View**
-5. **Future Features**
-6. **Technology Used**
-7. **Deployment**
-8. **Testing**
-9. **Credits**
 
-## 1. UX (User Experience)
+1. [UX - User Experience](#1-ux---user-experience)
+
+   * [User Stories](#user-stories)
+   * [Strategy](#strategy)
+   * [Scope](#scope)
+   * [Structure](#structure)
+   * [Skeleton](#skeleton)
+   * [Wireframe](#wireframe)
+   * [Surface](#surface)
+2. [Design](#2-design)
+
+   * [Typography](#typography)
+   * [Colour Scheme](#colour-scheme)
+   * [Imagery](#imagery)
+3. [Features](#3-features)
+4. [Tablet and Mobile View](#4-tablet-and-mobile-view)
+5. [Future Features](#5-future-features)
+6. [Technologies Used](#6-technologies-used)
+7. [Deployment](#7-deployment)
+8. [Testing](#8-testing)
+9. [Credits](#9-credits)
+
+## 1. UX - User Experience
+
 ### User Stories
+
 ![image](https://github.com/user-attachments/assets/7ce9c24d-d3c9-423e-a73e-4cf002c8ae7e)
 
 ### Strategy
-The goal of this project is to provide an easy-to-use tool for generating colour palettes. 
-The design is focused on simplicity and ease of use, with interactive features to enhance user experience.
+
+The goal of this project is to provide an easy-to-use tool for generating colour palettes.
+
+The design focuses on simplicity, speed and usability, giving users a quick way to generate colours and copy HEX codes for design or development work.
 
 ### Scope
-The application will generate a set of colour cards, each displaying a different colour. 
-Users can interact with these cards to copy colours, and generate or refresh palettes using buttons or keyboard shortcuts.
 
-### Structural
-- **Header**: Contains the logo and main heading.
-- **Main Content**: A grid of colour cards, Buttons for generating and refreshing palettes.
-- **Footer**: Social links and copyright
+The application generates a set of colour cards, each displaying a different random colour.
+
+Users can interact with these cards to copy colour codes, generate new palettes and refresh the interface using buttons or keyboard shortcuts.
+
+### Structure
+
+* **Header**: Contains the logo and main heading.
+* **Main Content**: Displays the colour card grid and palette control buttons.
+* **Footer**: Contains social links and copyright information.
 
 ### Skeleton
-The layout is designed using a grid system to ensure responsiveness. 
-The colour cards are arranged in a flexible grid that adapts to different screen sizes.
+
+The layout uses a responsive grid system to keep the colour cards flexible across different screen sizes.
+
+The page structure is designed to keep the main colour generation tool clear, accessible and easy to use.
 
 ### Wireframe
+
 ![image](https://github.com/user-attachments/assets/78484c5f-71e5-4ab0-9715-eb052447af54)
 
 ### Surface
-The design uses Tailwind CSS for styling, with a focus on clean and modern aesthetics. 
-The colour palette is bright and engaging, with interactive elements providing feedback to users.
+
+The design uses Tailwind CSS for clean utility-first styling.
+
+The interface uses bright colour cards, clear spacing and interactive visual feedback to make the app simple and engaging to use.
 
 ## 2. Design
+
 ### Typography
-- **Primary Font**: Tailwind CSS default font stack
-- **Font Sizes**: Various sizes used for headings, text, and buttons.
-  
+
+* **Primary Font**: Tailwind CSS default font stack
+* **Font Sizes**: Different font sizes are used for headings, body text, buttons and colour labels.
+
 ### Colour Scheme
-- **Background Colour**: Gray (#f7fafc)
-- **Primary Colour**: Sky Blue (#38bdf8)
-- **Accent Colours**: Various shades of red, orange, yellow, green, and blue.
-  
+
+* **Background Colour**: Gray `#f7fafc`
+* **Primary Colour**: Sky Blue `#38bdf8`
+* **Accent Colours**: Randomly generated shades across red, orange, yellow, green, blue and other colour ranges.
+
 ### Imagery
-- **Logo**: `assets/js/images/logo.png`
-- **Favicon**: `assets/js/images/favicon.png`
+
+* **Logo**: `assets/js/images/logo.png`
+* **Favicon**: `assets/js/images/favicon.png`
+
 ![4704539](https://github.com/user-attachments/assets/b08b23e6-7bea-47dd-a6e9-a3ac4d07363b)
 
-## 3. ## Features
-- Generate random colour palettes
-- Copy colours directly to the clipboard with a click
-- Refresh the palette with a button or keyboard shortcut
-- Responsive design for both desktop and mobile views
-  
-### JavaScript Logic/Functionality
-- **Event Listeners**: Handle click events on colour cards, button clicks, and keyboard shortcuts.
-- **Palette Generation**: Generates random colours and updates the colour cards.
-- **Clipboard Copying**: Uses the Clipboard API to copy colour codes to the clipboard.
-- **Notification**: Displays a notification when a colour is copied to the clipboard.
+## 3. Features
 
-## 4. Tablet/Mobile View
-The website is designed to be responsive, using Tailwind CSS grid system to ensure proper display on tablets and mobile devices.
-The layout adjusts to fit different screen sizes, ensuring a consistent user experience across devices.
+* Generate random colour palettes
+* Copy HEX colour codes directly to the clipboard
+* Refresh the palette using a button or keyboard shortcut
+* Responsive layout for desktop, tablet and mobile
+* Visual notification when a colour is copied
+
+### JavaScript Functionality
+
+* **Event Listeners**: Handles colour card clicks, button clicks and keyboard shortcuts.
+* **Palette Generation**: Generates random HEX colours and updates the colour cards dynamically.
+* **Clipboard Copying**: Uses the Clipboard API to copy colour codes.
+* **Notifications**: Displays feedback when a colour has been copied.
+
+## 4. Tablet and Mobile View
+
+The website is designed to be responsive using Tailwind CSS and flexible grid layouts.
+
+The layout adapts across desktop, tablet and mobile screens to maintain readability and usability.
+
 ![image](https://github.com/user-attachments/assets/35c8de10-ab2d-4c5c-acd1-ac070c24b611)
 
 ## 5. Future Features
-- **Back Button**: Allow users to go back to the previous palette they were on.
-- **Custom Colour Palette Creation**: Allow users to create and save custom colour palettes.
-- **Colour Contrast Analysis**: Provide feedback on colour contrast for accessibility.
-- **Export Palette**: Enable users to export their generated palette as an image or text file.
 
-## 6. Technology Used
+* **Previous Palette History**: Allow users to go back to previously generated palettes.
+* **Custom Colour Palette Creation**: Allow users to create and save their own palettes.
+* **Colour Contrast Analysis**: Provide feedback on colour contrast for accessibility.
+* **Export Palette**: Allow users to export palettes as an image or text file.
+* **Save Favourite Palettes**: Let users store palettes for later use.
+
+## 6. Technologies Used
+
 ### Languages
-- **HTML**
-- **CSS**
-- **JavaScript**
-  
-### Frameworks & Libraries
-- **Tailwind CSS**: Chosen for its utility-first approach, allowing for rapid UI development with a consistent and responsive design.
-- **Clipboard API**: Integrated to allow direct copying of colour codes to the user’s clipboard.
-- **Font Awesome**: Used for social media icons to maintain a professional and modern appearance.
-  
-### Programs
-- **GitHub**: For version control and deployment.
+
+* HTML
+* CSS
+* JavaScript
+
+### Frameworks, Libraries and APIs
+
+* **Tailwind CSS**: Used for utility-first styling and responsive layout.
+* **Clipboard API**: Used to copy colour codes directly to the clipboard.
+* **Font Awesome**: Used for footer icons.
+
+### Tools
+
+* **GitHub**: Used for version control.
+* **GitHub Pages**: Used for deployment.
 
 ## 7. Deployment
-- Deployed website having no issues, everything works as it should.
+
+The project is deployed using GitHub Pages.
+
 ![image](https://github.com/user-attachments/assets/84788245-9fb5-43dd-a7bd-92297af8d05c)
 
 ## 8. Testing
+
 ### Colour Contrast
-- WCAG Contrast Checker Extension
+
+The interface was checked using a WCAG contrast checker extension.
+
 ![image](https://github.com/user-attachments/assets/02d50191-23be-41b2-a0db-28bc0e4bae8e)
 
 ### Validation
-- **HTML & CSS**: Validated using [W3C HTML Validator](https://validator.w3.org/)
+
+**HTML and CSS** were validated using the W3C HTML Validator.
+
 ![image](https://github.com/user-attachments/assets/9390532f-e083-4542-a1d1-de732510e074)
 
-- **JavaScript**: Tested for errors and functionality on console log.
+**JavaScript** was tested through browser console checks and manual interaction testing.
+
 ![image](https://github.com/user-attachments/assets/01cb86bd-8637-4148-8d11-ea45cd9a4cd2)
 
 ### Lighthouse Audits
-- **Performance**: Ensured good performance scores.
-- **Accessibility**: Checked for accessibility issues.
-- **Best Practices**: Verified adherence to best practices.
+
+Lighthouse audits were used to check performance, accessibility and best practices.
+
 ![image](image-1.png)
 
-### Bugs
-- Fixed tailwind error on console.log.
-- Fixed issues related to colour card responsiveness.
-- Addressed minor bugs in clipboard copying functionality.
-- Fixed issues with the clicking listeners.
-- Fixed issues causing palette cards to distort.
+### Bugs Fixed
 
-## 9.Credits
-### Content References
-- **Inspiration**: Examples of colour palette generators from various design resources and tutorials.
-  
-### Media References
-- **Images**: Logo and favicon sourced from Google Images..
-- **Font Awesome Icons**: Used for Footer section.
-  
-### Acknowledgments
-- **Tailwind CSS**: For providing a powerful utility-first CSS framework.
-- **W3Schools:** Developing new Listeners and Functions.
-- **A little bit perplexity and chat GPT**: Bug fixes and Validation
+* Fixed Tailwind-related console errors.
+* Fixed colour card responsiveness issues.
+* Improved clipboard copying functionality.
+* Fixed event listener issues.
+* Fixed layout distortion affecting palette cards.
 
+## 9. Credits
 
+### References
 
+* JavaScript, HTML and CSS documentation were used to support development and debugging.
+* W3Schools was used as a reference for JavaScript event listeners and DOM functionality.
+* Tailwind CSS documentation was used for utility-first styling and responsive layout support.
 
+### Libraries and Tools
 
+* Tailwind CSS for styling and responsive layout.
+* Font Awesome for footer icons.
+* GitHub Pages for deployment.
 
+### Development Support
 
-
-
+* AI tools were used for debugging guidance, validation support and improving implementation ideas during development.
